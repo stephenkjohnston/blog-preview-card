@@ -24,8 +24,17 @@ body {
     border: 1px solid var(--clr-black);
     background: var(--clr-white);
     border-radius: 10px;
-    box-shadow: 10px 10px var(--clr-black);
+    box-shadow: 5px 5px var(--clr-black);
+    transition: all .5s ease;
     max-width: 336px;
+}
+
+.card:hover {
+    box-shadow: 10px 10px var(--clr-black);
+}
+
+.card:hover > .title {
+    color: var(--clr-yellow);
 }
 
 :is(p, .title) {
